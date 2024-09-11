@@ -12,6 +12,7 @@ p {
 }
 
 .selection-button {
+    font-weight: bold;
     height: 32px;
     border: none;
     border-radius: 5px;
@@ -30,7 +31,7 @@ p {
     padding-top: 30px;
     padding-bottom: 30px;
     margin: 0px;
-    background: bisque;
+    background: rgb(166, 158, 158);
     text-align: center;
 }
 
@@ -82,6 +83,12 @@ input[type=number] {
 
 .main-content>aside {
     flex: 1;
+}
+
+@media only screen and (max-width: 610px) { 
+    .main-content {
+        flex-direction: column;
+    }
 }
 
 .button-calculate {
