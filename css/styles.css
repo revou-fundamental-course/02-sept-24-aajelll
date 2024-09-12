@@ -48,10 +48,24 @@ p { /* semua paragraf */
     flex-direction: column;
 }
 
+.luas-jajargenjang-content {
+    display: flex;
+    flex-direction: column;
+}
+
 .luas-segitiga-img { /* image segitiga pink */
     height: 300px;
     width: 300px;
     background-image: url('https://i.ibb.co.com/k4T1jNH/segitiga.jpg');
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+
+.luas-jajargenjang-img { /* image jajargenjang pink */
+    height: 400px;
+    width: 400px;
+    background-image: url('https://i.ibb.co.com/t2YnWmT/jajargenjang-pink.jpg');
     background-size: cover;
     background-position: center;
     align-self: center;
