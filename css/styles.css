@@ -35,6 +35,14 @@ p { /* semua paragraf */
     text-align: center;
 }
 
+.luas-keliling-jajargenjang-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0px;
+    background: rgb(164, 158, 166);
+    text-align: center;
+}
+
 .luas-segitiga-content {
     display: flex;
     flex-direction: column;
@@ -54,6 +62,14 @@ p { /* semua paragraf */
 }
 
 .keliling-segitiga-form-header {
+    text-align: center;
+}
+
+.luas-jajargenjang-form-header {
+    text-align: center;
+}
+
+.keliling-jajargenjang-form-header {
     text-align: center;
 }
 
@@ -82,7 +98,7 @@ input[type=number] { /* tampilan kolom input */
 }
 
 .main-content>aside {
-    flex: 1;
+    flex: 2;
 }
 
 @media only screen and (max-width: 610px) { /* mengubah tampilan sesuai width device */
@@ -91,9 +107,19 @@ input[type=number] { /* tampilan kolom input */
     }
 }
 
-.button-calculate { /* tampilan button calculate akhir */
+.button-calculate { /* tampilan button calculate akhir segitiga */
     padding: 8px;
     background-color: lightpink;
+    border: transparent;
+    border-radius: 5px;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-calculate2 { /* tampilan button calculate akhir jajargenjang */
+    padding: 8px;
+    background-color: lightblue;
     border: transparent;
     border-radius: 5px;
     font-family: monospace;

@@ -33,3 +33,33 @@ function calculateArea2() { //KELILING SEGITIGA
     "Keliling Segitiga: " + sisi1 + " + " + sisi2 + " + " + sisi3 + "<br>" +
     "Keliling Segitiga: " + hasilKeliling;
 }
+
+function calculateArea3() { //LUAS JAJARGENJANG
+  var alass = document.getElementById("alass").value;
+  var tinggii = document.getElementById("tinggii").value;
+
+  if (alass == '' || tinggii == ''|| alass.includes('e') || tinggii.includes('e')) {
+    alert('Masukkan Nilai Terlebih Dahulu');
+    return;
+  }
+  var hasilLuas1 = alass * tinggii; //rumus
+
+  document.getElementById("result3").innerHTML = //hasil luas jajargenjang
+    "Luas Jajargenjang: " + alass + " x " + tinggii + "<br>" +
+    "Luas Jajargenjang: " + hasilLuas1;
+}
+
+function calculateArea4() { //KELILING JAJARGENJANG
+  var panjang = document.getElementById("panjang").value;
+  var lebar = document.getElementById("lebar").value;
+
+  if (panjang == '' || lebar == ''|| panjang.includes('e') || lebar.includes('e')) {
+    alert('Masukkan Nilai Terlebih Dahulu');
+    return;
+  }
+  var hasilKeliling2 = 2 * panjang + 2 * lebar; //rumus
+
+  document.getElementById("result4").innerHTML = //hasil keliling jajargenjang
+    "Keliling Jajargenjang: (2 x " + panjang + ")" + " + (2 x " + lebar + ")" + "<br>" +
+    "Keliling Jajargenjang: " + hasilKeliling2;
+}
