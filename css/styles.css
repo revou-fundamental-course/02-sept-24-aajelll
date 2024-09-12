@@ -1,8 +1,8 @@
-p {
+p { /* semua paragraf */
     text-align: center;
 }
 
-.main-header {
+.main-header { /* Untuk Welcome dan keterangan di bawahnya */
     text-align: center;
 }
 
@@ -20,18 +20,18 @@ p {
 }
 
 .lightblue-color {
-    background-color:lightblue;
+    background-color:rgb(175, 220, 235);
 }
 
 .lightpink-color {
-    background-color:lightpink;
+    background-color:rgb(255, 205, 213);
 }
 
 .luas-keliling-segitiga-header {
     padding-top: 30px;
     padding-bottom: 30px;
     margin: 0px;
-    background: rgb(166, 158, 158);
+    background: rgb(164, 158, 166);
     text-align: center;
 }
 
@@ -40,7 +40,7 @@ p {
     flex-direction: column;
 }
 
-.luas-segitiga-img {
+.luas-segitiga-img { /* image segitiga pink */
     height: 300px;
     width: 300px;
     background-image: url('https://i.ibb.co.com/k4T1jNH/segitiga.jpg');
@@ -57,18 +57,18 @@ p {
     text-align: center;
 }
 
-.input-wrapper {
+.input-wrapper { /* Style peletakan kolom input */
     width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.input-wrapper>input {
+.input-wrapper>input { /* tambahan style pada kolom input */
     width: 65%;
 }
 
-input[type=number] {
+input[type=number] { /* tampilan kolom input */
     padding: 12px 20px;
     margin: 8px 0px;
     display: inline-block;
@@ -77,7 +77,7 @@ input[type=number] {
     box-sizing: border-box;
 }
 
-.main-content {
+.main-content { /* konten utama / keseluruhan */
     display: flex;
 }
 
@@ -85,13 +85,13 @@ input[type=number] {
     flex: 1;
 }
 
-@media only screen and (max-width: 610px) { 
+@media only screen and (max-width: 610px) { /* mengubah tampilan sesuai width device */
     .main-content {
         flex-direction: column;
     }
 }
 
-.button-calculate {
+.button-calculate { /* tampilan button calculate akhir */
     padding: 8px;
     background-color: lightpink;
     border: transparent;

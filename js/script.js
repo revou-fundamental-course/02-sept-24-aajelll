@@ -14,14 +14,19 @@ function calculateArea1() { //LUAS SEGITIGA
 }
 
 function calculateArea2() { //KELILING SEGITIGA
-  var sisi1 = parseFloat (document.getElementById("sisi1").value); //mengambil nilai dari input pada sisi1
-  var sisi2 = parseFloat (document.getElementById("sisi2").value);
-  var sisi3 = parseFloat (document.getElementById("sisi3").value);
+  var sisi1 = document.getElementById("sisi1").value; //mengambil nilai dari input pada sisi1
+  var sisi2 = document.getElementById("sisi2").value;
+  var sisi3 = document.getElementById("sisi3").value;
 
-  if (sisi1 == '' || sisi2 == '' || sisi3 == '' || sisi1.includes('e') || sisi2.includes('e') || sisi3.includes('e')) {
+  if (sisi1 == '' || sisi2 == '' || sisi3 == '' || isNaN(sisi1) || isNaN(sisi2) || isNaN(sisi3)) { //NaN atau not a number digunakan untuk input yang tidak valid
     alert('Masukkan Nilai Terlebih Dahulu');
     return;
   }
+
+  sisi1 = parseFloat(sisi1);
+  sisi2 = parseFloat(sisi2);
+  sisi3 = parseFloat(sisi3);
+
   var hasilKeliling = sisi1 + sisi2 + sisi3;
   
   document.getElementById("result2").innerHTML =
